@@ -1,0 +1,71 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.sortable-list {
+  width: 425px;
+  background: #fff;
+  padding: 30px 25px 20px;
+  border-radius: 7px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sortable-list .item {
+  margin-bottom: 11px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px 13px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: move;
+}
+
+.sortable-list .item .details {
+  display: flex;
+  align-items: center;
+}
+
+.sortable-list .item .details img {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.sortable-list .item .details span {
+  font-size: 1.13rem;
+}
+
+.sortable-list .item i {
+  font-size: 1.13rem;
+  color: #474747;
+}
+
+.sortable-list .item.dragging {
+  opacity: 0.6;
+}
+
+.sortable-list .item.dragging .details,
+.sortable-list .item.dragging i {
+  opacity: 0;
+}
